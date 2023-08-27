@@ -76,8 +76,8 @@ public class Base {
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 
-			//WebDriverManager.firefoxdriver().setup();
-			System.setProperty("webrdiver.gecko.driver", "C:\\geckodriver-v0.33.0-win32\\geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
+			//System.setProperty("webrdiver.gecko.driver", "C:\\geckodriver-v0.33.0-win32\\geckodriver.exe");
 			driver = new FirefoxDriver();
 
 		}
