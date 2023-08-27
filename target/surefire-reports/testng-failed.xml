@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TutorialsNinja Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.tutorialsninja.qa.listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="TutorialsNinja Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.tutorialsninja.qa.testcases.RegisterTest">
+        <methods>
+          <include name="verifyRegisteringAccountWithExistingEmailAddress"/>
+          <include name="setup"/>
+          <include name="verifyRegisteringAccountByProvidingAllFields"/>
+          <include name="verifyRegisteringAnAccountWithMandatoryFields"/>
+          <include name="verifyRegisteringAccountWithoutFillingAnyDetails"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.RegisterTest -->
+    </classes>
+  </test> <!-- TutorialsNinja Tests(failed) -->
+</suite> <!-- Failed suite [TutorialsNinja Automation Suite] -->
