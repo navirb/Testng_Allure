@@ -50,6 +50,7 @@ public class Base {
 	public WebDriver initializeBrowserAndOpenApplicationURL(String browserName) {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
+			System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true"); 
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 
