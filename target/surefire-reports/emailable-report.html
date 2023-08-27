@@ -9,81 +9,91 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">TutorialsNinja Automation Suite</th></tr>
-<tr><td><a href="#t0">TutorialsNinja Tests</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">783</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TutorialsNinja Tests</a></td><td class="num">1</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">34,327</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TutorialsNinja Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TutorialsNinja Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.tutorialsninja.qa.testcases.RegisterTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1693149651895</td><td rowspan="1">143</td></tr><tr><th colspan="4">TutorialsNinja Tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="7">com.tutorialsninja.qa.testcases.RegisterTest</td><td><a href="#m1">setup</a></td><td rowspan="3">1693149652108</td><td rowspan="3">0</td></tr><tr class="skippedeven"><td><a href="#m2">setup</a></td></tr><tr class="skippedeven"><td><a href="#m3">setup</a></td></tr><tr class="skippedeven"><td><a href="#m4">tearDown</a></td><td rowspan="4">1693149652123</td><td rowspan="4">0</td></tr><tr class="skippedeven"><td><a href="#m5">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m6">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m7">tearDown</a></td></tr><tr><th colspan="4">TutorialsNinja Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">com.tutorialsninja.qa.testcases.RegisterTest</td><td><a href="#m8">verifyRegisteringAccountByProvidingAllFields</a></td><td rowspan="1">1693149652109</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">verifyRegisteringAccountWithExistingEmailAddress</a></td><td rowspan="1">1693149652115</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m10">verifyRegisteringAccountWithoutFillingAnyDetails</a></td><td rowspan="1">1693149652124</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">verifyRegisteringAnAccountWithMandatoryFields</a></td><td rowspan="1">1693149652058</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TutorialsNinja Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TutorialsNinja Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.tutorialsninja.qa.testcases.RegisterTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1693150087442</td><td rowspan="1">12490</td></tr><tr><th colspan="4">TutorialsNinja Tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="5">com.tutorialsninja.qa.testcases.RegisterTest</td><td><a href="#m1">setup</a></td><td rowspan="2">1693150100074</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m2">setup</a></td></tr><tr class="skippedeven"><td><a href="#m3">tearDown</a></td><td rowspan="3">1693150100078</td><td rowspan="3">0</td></tr><tr class="skippedeven"><td><a href="#m4">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m5">tearDown</a></td></tr><tr><th colspan="4">TutorialsNinja Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">com.tutorialsninja.qa.testcases.RegisterTest</td><td><a href="#m6">verifyRegisteringAccountByProvidingAllFields</a></td><td rowspan="1">1693150099963</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m7">verifyRegisteringAccountWithExistingEmailAddress</a></td><td rowspan="1">1693150100075</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">verifyRegisteringAccountWithoutFillingAnyDetails</a></td><td rowspan="1">1693150100080</td><td rowspan="1">0</td></tr><tr><th colspan="4">TutorialsNinja Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.tutorialsninja.qa.testcases.RegisterTest</td><td><a href="#m9">verifyRegisteringAnAccountWithMandatoryFields</a></td><td rowspan="1">1693150083546</td><td rowspan="1">1655</td></tr></tbody>
 </table>
-<h2>TutorialsNinja Tests</h2><h3 id="m0">com.tutorialsninja.qa.testcases.RegisterTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:311)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:69)
+<h2>TutorialsNinja Tests</h2><h3 id="m0">com.tutorialsninja.qa.testcases.RegisterTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Navigation timed out after 5000 ms
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ddab4b24-19f3-4e94-8a9b-463149cc8b20, get {url=http://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:11890, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42908, moz:profile: C:\Users\pratm\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11890/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ddab4b24-19f3-4e94-8a9b-463149cc8b20
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:88)
 	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.tutorialsninja.qa.testcases.RegisterTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.tutorialsninja.qa.testcases.RegisterTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.tutorialsninja.qa.testcases.RegisterTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.tutorialsninja.qa.testcases.RegisterTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">com.tutorialsninja.qa.testcases.RegisterTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">com.tutorialsninja.qa.testcases.RegisterTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.tutorialsninja.qa.testcases.RegisterTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.tutorialsninja.qa.testcases.RegisterTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.tutorialsninja.qa.testcases.RegisterTest#verifyRegisteringAccountByProvidingAllFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:311)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:69)
+<h3 id="m6">com.tutorialsninja.qa.testcases.RegisterTest#verifyRegisteringAccountByProvidingAllFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Navigation timed out after 5000 ms
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ddab4b24-19f3-4e94-8a9b-463149cc8b20, get {url=http://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:11890, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42908, moz:profile: C:\Users\pratm\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11890/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ddab4b24-19f3-4e94-8a9b-463149cc8b20
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:88)
 	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.tutorialsninja.qa.testcases.RegisterTest#verifyRegisteringAccountWithExistingEmailAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:311)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:69)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.tutorialsninja.qa.testcases.RegisterTest#verifyRegisteringAccountWithExistingEmailAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Navigation timed out after 5000 ms
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ddab4b24-19f3-4e94-8a9b-463149cc8b20, get {url=http://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:11890, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42908, moz:profile: C:\Users\pratm\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11890/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ddab4b24-19f3-4e94-8a9b-463149cc8b20
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:88)
 	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.tutorialsninja.qa.testcases.RegisterTest#verifyRegisteringAccountWithoutFillingAnyDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:311)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:69)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.tutorialsninja.qa.testcases.RegisterTest#verifyRegisteringAccountWithoutFillingAnyDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Navigation timed out after 5000 ms
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ddab4b24-19f3-4e94-8a9b-463149cc8b20, get {url=http://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:11890, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42908, moz:profile: C:\Users\pratm\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11890/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ddab4b24-19f3-4e94-8a9b-463149cc8b20
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:88)
 	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.tutorialsninja.qa.testcases.RegisterTest#verifyRegisteringAnAccountWithMandatoryFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:311)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:69)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.tutorialsninja.qa.testcases.RegisterTest#verifyRegisteringAnAccountWithMandatoryFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
