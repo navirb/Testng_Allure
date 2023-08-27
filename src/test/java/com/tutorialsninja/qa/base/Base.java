@@ -52,12 +52,13 @@ public class Base {
 	public WebDriver initializeBrowserAndOpenApplicationURL(String browserName) {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+			//System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 
 			ChromeOptions options = new ChromeOptions();
 			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+			options.setBinary("drivers/chromedriver.exe");
 
-			options.addArguments("--remote-allow-origins=*");
+			//options.addArguments("--remote-allow-origins=*");
 			// WebDriver driver = new ChromeDriver(options);
 			// WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
