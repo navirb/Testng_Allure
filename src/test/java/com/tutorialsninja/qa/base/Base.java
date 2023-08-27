@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -51,16 +52,22 @@ public class Base {
 	public WebDriver initializeBrowserAndOpenApplicationURL(String browserName) {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true"); 
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+
+			ChromeOptions options = new ChromeOptions();
+			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+
+			options.addArguments("--remote-allow-origins=*");
+			// WebDriver driver = new ChromeDriver(options);
+			// WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver(options);
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 
 			driver = new FirefoxDriver();
 
 		} else if (browserName.equalsIgnoreCase("edge")) {
-			//WebDriverManager.edgedriver().setup();
+			// WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 
 		} else if (browserName.equalsIgnoreCase("safari")) {
