@@ -1,0 +1,4 @@
+com\tutorialsninja\qa\base\Base.class
+com\tutorialsninja\qa\testcases\SearchTest.class
+com\tutorialsninja\qa\testcases\LoginTest.class
+com\tutorialsninja\qa\testcases\RegisterTest.class
