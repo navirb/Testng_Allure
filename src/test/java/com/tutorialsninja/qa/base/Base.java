@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -68,12 +69,15 @@ public class Base {
 			driver = new FirefoxDriver();
 
 		} else if (browserName.equalsIgnoreCase("edge")) {
-			 WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			
+			EdgeOptions options = new EdgeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			driver = new EdgeDriver(options);
 
-		} else if (browserName.equalsIgnoreCase("safari")) {
+		} else if (browserName.equalsIgnoreCase("firefox")) {
 
-			driver = new SafariDriver();
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
 
 		}
 
