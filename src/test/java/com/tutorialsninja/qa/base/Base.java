@@ -59,7 +59,8 @@ public class Base {
 			
 			System.out.println("==================================");
 			System.out.println(System.getProperty("user.dir"));
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\pratm\\Testng_Allure\\drivers\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver","C:\\Users\\pratm\\Testng_Allure\\drivers\\chromedriver.exe");
 			System.out.println("==================================");
 			//options.setBinary("drivers/chromedriver.exe");
 
