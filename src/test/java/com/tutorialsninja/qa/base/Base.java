@@ -59,7 +59,7 @@ public class Base {
 			
 			System.out.println("==================================");
 			//System.out.println(System.getProperty("user.dir"));
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\pratm\\.cache\\selenium\\chromedriver\\win64\\116.0.5845.96\\schromedriver.exe");
 			System.out.println("==================================");
 			//options.setBinary("drivers/chromedriver.exe");
