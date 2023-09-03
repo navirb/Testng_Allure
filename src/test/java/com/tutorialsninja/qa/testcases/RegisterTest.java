@@ -12,6 +12,8 @@ import com.tutorialsninja.qa.pages.HomePage;
 import com.tutorialsninja.qa.pages.RegisterPage;
 import com.tutorialsninja.qa.utils.Utilities;
 
+import io.qameta.allure.Allure;
+
 public class RegisterTest extends Base {
 	
 	RegisterPage registerPage;
@@ -41,7 +43,7 @@ public class RegisterTest extends Base {
 	
 	@Test(priority=1)
 	public void verifyRegisteringAnAccountWithMandatoryFields() {
-		
+		Allure.step("Account suucess page validation");
 		accountSuccessPage = registerPage.registerWithMandatoryFields(dataProp.getProperty("firstName"),dataProp.getProperty("lastName"),Utilities.generateEmailWithTimeStamp(),dataProp.getProperty("telephoneNumber"),prop.getProperty("validPassword"));
 		Assert.assertEquals(accountSuccessPage.retrieveAccountSuccessPageHeading(),dataProp.getProperty("accountSuccessfullyCreatedHeading"),"Account Success page is not displayed");
 	
@@ -49,7 +51,7 @@ public class RegisterTest extends Base {
 	
 	@Test(priority=2)
 	public void verifyRegisteringAccountByProvidingAllFields() {
-		
+		Allure.step("Account suucess page validation");
 		accountSuccessPage = registerPage.registerWithAllFields(dataProp.getProperty("firstName"),dataProp.getProperty("lastName"),Utilities.generateEmailWithTimeStamp(),dataProp.getProperty("telephoneNumber"),prop.getProperty("validPassword"));
 		Assert.assertEquals(accountSuccessPage.retrieveAccountSuccessPageHeading(),dataProp.getProperty("accountSuccessfullyCreatedHeading"),"Account Success page is not displayed");
 	
@@ -57,7 +59,7 @@ public class RegisterTest extends Base {
 	
 	@Test(priority=3)
 	public void verifyRegisteringAccountWithExistingEmailAddress() {
-	
+		Allure.step("Duplicate message validation");
 		registerPage.registerWithAllFields(dataProp.getProperty("firstName"),dataProp.getProperty("lastName"),prop.getProperty("validEmail"),dataProp.getProperty("telephoneNumber"),prop.getProperty("validPassword"));
 		Assert.assertTrue(registerPage.retrieveDuplicateEmailAddressWarning().contains(dataProp.getProperty("duplicateEmailWarning")),"Warning message regaring duplicate email address is not displayed");
 	
@@ -65,7 +67,7 @@ public class RegisterTest extends Base {
 	
 	@Test(priority=4)
 	public void verifyRegisteringAccountWithoutFillingAnyDetails() {
-		
+		Allure.step("Password warning validation");
 		registerPage.clickOnContinueButton();
 		Assert.assertTrue(registerPage.displayStatusOfWarningMessages(dataProp.getProperty("privacyPolicyWarning"),dataProp.getProperty("firstNameWarning"),dataProp.getProperty("lastNameWarning"),dataProp.getProperty("emailWarning"),dataProp.getProperty("telephoneWarning"),dataProp.getProperty("passwordWarning")));
 				

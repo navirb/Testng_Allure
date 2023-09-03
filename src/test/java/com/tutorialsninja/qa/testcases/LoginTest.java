@@ -13,6 +13,8 @@ import com.tutorialsninja.qa.pages.HomePage;
 import com.tutorialsninja.qa.pages.LoginPage;
 import com.tutorialsninja.qa.utils.Utilities;
 
+import io.qameta.allure.Allure;
+
 public class LoginTest extends Base{
 	
 	LoginPage loginPage;
@@ -43,7 +45,9 @@ public class LoginTest extends Base{
 	public void verifyLoginWithValidCredentials(String email,String password) {
 	
 		AccountPage accountPage = loginPage.login(email, password);
+		Allure.step("Validating Edit Your Account Information option");
 		Assert.assertTrue(accountPage.getDisplayStatusOfEditYourAccountInformationOption(),"Edit Your Account Information option is not displayed");
+		Allure.step("Test execution is completed");
 	
 	}
 	
@@ -58,8 +62,9 @@ public class LoginTest extends Base{
 	public void verifyLoginWithInvalidCredentials() {
 		
 		loginPage.login(Utilities.generateEmailWithTimeStamp(),dataProp.getProperty("invalidPassword"));	
+		Allure.step("Validating Expected Warning message");
 		Assert.assertTrue(loginPage.retrieveEmailPasswordNotMatchingWarningMessageText().contains(dataProp.getProperty("emailPasswordNoMatchWarning")),"Expected Warning message is not displayed");
-		
+		Allure.step("Test execution is completed");
 	}
 	
 	@Test(priority=3)
