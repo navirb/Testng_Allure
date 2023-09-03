@@ -65,6 +65,7 @@ public class Base {
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--ignore-ssl-errors=yes");
 			options.addArguments("--ignore-certificate-errors");
+			options.addArguments("--remote-debugging-port=9222");
 			System.out.println("==================================");
 			// System.out.println(System.getProperty("user.dir"));
 			// WebDriverManager.chromedriver().setup();
