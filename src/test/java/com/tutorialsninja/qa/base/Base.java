@@ -61,7 +61,9 @@ public class Base {
 			//System.out.println(System.getProperty("user.dir"));
 			//WebDriverManager.chromedriver().setup();
 	ChromeOptions options = new ChromeOptions();
-			
+			options.add_argument('--disable-dev-shm-usage')
+                        options.add_argument('--ignore-ssl-errors=yes')
+                        options.add_argument('--ignore-certificate-errors')
 			System.out.println("==================================");
 			//System.out.println(System.getProperty("user.dir"));
 			//WebDriverManager.chromedriver().setup();
