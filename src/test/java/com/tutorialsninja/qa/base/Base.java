@@ -56,7 +56,7 @@ public class Base {
 			//System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 
 			//ChromeOptions options = new ChromeOptions();
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\vijuj\\.cache\\selenium\\chromedriver\\win64\\116.0.5845.96\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 			//options.setBinary("drivers/chromedriver.exe");
 
 			//options.addArguments("--remote-allow-origins=*");
