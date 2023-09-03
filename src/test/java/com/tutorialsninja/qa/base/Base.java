@@ -53,25 +53,28 @@ public class Base {
 	public WebDriver initializeBrowserAndOpenApplicationURL(String browserName) {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			//System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+			// System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,
+			// "true");
 
-			//ChromeOptions options = new ChromeOptions();
-			
-			System.out.println("==================================");
-			//System.out.println(System.getProperty("user.dir"));
-			//WebDriverManager.chromedriver().setup();
-	ChromeOptions options = new ChromeOptions();
-			options.add_argument("--disable-dev-shm-usage");
-                        options.add_argument("--ignore-ssl-errors=yes");
-                        options.add_argument("--ignore-certificate-errors");
-			System.out.println("==================================");
-			//System.out.println(System.getProperty("user.dir"));
-			//WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\pratm\\.cache\\selenium\\chromedriver\\win64\\116.0.5845.96\\chromedriver.exe");
-			System.out.println("==================================");
-			options.setBinary("C:\\Users\\pratm\\.cache\\selenium\\chromedriver\\win64\\116.0.5845.96\\chromedriver.exe");
+			// ChromeOptions options = new ChromeOptions();
 
-			//options.addArguments("--remote-allow-origins=*");
+			System.out.println("==================================");
+			// System.out.println(System.getProperty("user.dir"));
+			// WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--ignore-ssl-errors=yes");
+			options.addArguments("--ignore-certificate-errors");
+			System.out.println("==================================");
+			// System.out.println(System.getProperty("user.dir"));
+			// WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\Users\\pratm\\.cache\\selenium\\chromedriver\\win64\\116.0.5845.96\\chromedriver.exe");
+			System.out.println("==================================");
+			options.setBinary(
+					"C:\\Users\\pratm\\.cache\\selenium\\chromedriver\\win64\\116.0.5845.96\\chromedriver.exe");
+
+			// options.addArguments("--remote-allow-origins=*");
 			// WebDriver driver = new ChromeDriver(options);
 			// WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
@@ -81,7 +84,7 @@ public class Base {
 			driver = new FirefoxDriver();
 
 		} else if (browserName.equalsIgnoreCase("edge")) {
-			
+
 			EdgeOptions options = new EdgeOptions();
 			options.addArguments("--remote-allow-origins=*");
 			driver = new EdgeDriver(options);
@@ -89,7 +92,8 @@ public class Base {
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 
 			WebDriverManager.firefoxdriver().setup();
-			//System.setProperty("webrdiver.gecko.driver", "C:\\geckodriver-v0.33.0-win32\\geckodriver.exe");
+			// System.setProperty("webrdiver.gecko.driver",
+			// "C:\\geckodriver-v0.33.0-win32\\geckodriver.exe");
 			driver = new FirefoxDriver();
 
 		}
