@@ -68,12 +68,12 @@ public class Base {
 			options.addArguments("--remote-debugging-port=9222");
 			System.out.println("==================================");
 			// System.out.println(System.getProperty("user.dir"));
-			// WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\pratm\\Testng_Allure\\drivers\\chromedriver.exe");
-			System.out.println("==================================");
-			options.setBinary(
-					"C:\\Users\\pratm\\.cache\\selenium\\chromedriver\\win64\\116.0.5845.96\\chromedriver.exe");
+			 WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver",
+				//	"C:\\Users\\pratm\\Testng_Allure\\drivers\\chromedriver.exe");
+			//System.out.println("==================================");
+			//options.setBinary(
+				//	"C:\\Users\\pratm\\.cache\\selenium\\chromedriver\\win64\\116.0.5845.96\\chromedriver.exe");
 
 			// options.addArguments("--remote-allow-origins=*");
 			// WebDriver driver = new ChromeDriver(options);
