@@ -58,7 +58,7 @@ public class Base {
 			//ChromeOptions options = new ChromeOptions();
 			System.out.println("==================================");
 			System.out.println(System.getProperty("user.dir"));
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\pratm\\.cache\\selenium\\chromedriver\\win64\\116.0.5845.96\\chromedriver.exe");
 			System.out.println("==================================");
 			//options.setBinary("drivers/chromedriver.exe");
 
